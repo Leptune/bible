@@ -1,0 +1,68 @@
+body {
+	background: url(http://pic.jj20.com/up/allimg/1011/112316131A7/161123131A7-9.jpg);
+	background-attachment: fixed;
+	padding: 5px 10px;
+	overflow: hidden;
+}
+.bible-top {
+	text-align: center;
+	cursor: pointer;
+	background: #fff;
+	opacity: 0.8;
+}
+.bible-header {
+	position: fixed;
+	width: 83.33333333%;
+	z-index: 999;
+	padding-right: 16px;
+	height: 
+}
+.bible-header .item h2 {
+	font-weight: bold;
+}
+.bible-header .item:hover {
+	color: #d71868;
+}
+.bible-header .item {
+	border: solid 1px #ccc;
+	background: #e1e1e1;
+	max-height: 10vh;
+}
+.bible-header .item.active {
+	background: #fff;
+	cursor: auto;
+}
+.bible-item {
+	border: solid 1px #ccc;
+}
+.bible-item:hover {
+	background: #d5c7e8;
+}
+.bible-body {
+	margin-top: 4.4em;
+	max-height: 88vh;
+}
+
+#amazingaudioplayer-1 {
+	display: block;
+	position: relative;
+	width: 100%;
+	max-width: 300px;
+	height: auto;
+	margin: 0px auto 0px;
+}
+.bible-player {
+	height: 97vh;
+}
+.amazingaudioplayer-bar {
+	position: fixed;
+	width: 15.666667%;
+	z-index: 999;
+	top: 0px;
+}
+.amazingaudioplayer-tracklist {
+	margin-top: 20px;
+}
+/*.amazingaudioplayer-tracklist-container {
+	height: 48.3vh;
+}*/
