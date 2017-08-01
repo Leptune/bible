@@ -50,6 +50,14 @@ ul li {
 .bible-body-juan li:last-child, .bible-body-zhang li:last-child {
     border-right: solid 0.1px #ccc;
 }
+.bible-body-old h4,.bible-body-new h4 {
+    height: 19px;
+    line-height: 19px;
+}
+.bible-body-old h5,.bible-body-new h5 {
+    height: 30px;
+    line-height: 30px;
+}
 li.active {
     color: red;
 }
