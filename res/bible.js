@@ -10,12 +10,18 @@ $(document).ready(function() {
 		}
 		$('.bible-body-old').append('<li><h3>'+obj.abbr+'</h3><h5>'+name+'</h5></li>')
 	}
+	for (var i = 0; i < 4; i++) {
+		$('.bible-body-old').append('<li><h3>&nbsp;</h3><h5>&nbsp;</h5></li>')
+	}
 	for (name in bible_data) {
 		var obj = bible_data[name];
 		if (obj.old) {
 			continue;
 		}
 		$('.bible-body-new').append('<li><h3>'+obj.abbr+'</h3><h5>'+name+'</h5></li>')
+	}
+	for (var i = 0; i < 4; i++) {
+		$('.bible-body-new').append('<li><h3>&nbsp;</h3><h5>&nbsp;</h5></li>')
 	}
 	$('.bible-body-old li:first').addClass('active');
 
