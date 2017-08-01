@@ -1,0 +1,67 @@
+body {
+    background: #cecece;
+    text-align: center;
+    margin-top: -5px;
+}
+ul {
+    font-size: 0;
+    margin: 0;
+    text-align: left;
+}
+ul li {
+    display: inline-table;
+    text-align: center;
+}
+.bible-top {
+    max-width: 400px;
+    margin: 0 auto;
+    background: #fefefe;
+}
+.bible-body {
+    height: 75vh;
+}
+.bible-category {
+    position: relative;
+    top: 10px;
+    border-bottom: solid 1px #ccc;
+}
+.bible-chapter-type {
+    margin-top: 10px;
+}
+.bible-articles li {
+    width: 25%;
+}
+.bible-chapter-list li {
+    width: 20%;
+}
+.bible-foot {
+    border-top: solid 1px #ccc;
+}
+.bible-chapter-type li, .bible-type li {
+    width: 50%;
+}
+.bible-chapter-type li, .bible-body li, .bible-foot li{
+    cursor: pointer;
+}
+.bible-articles li, .bible-chapter-list li {
+    border-left: solid 0.1px #ccc;
+    border-bottom: solid 0.1px #ccc;
+}
+.bible-articles li:last-child, .bible-chapter-list li:last-child {
+    border-right: solid 0.1px #ccc;
+}
+li.active {
+    color: red;
+}
+.bible-chapter-type li {
+    border-bottom: solid 3px #ccc;
+}
+.bible-chapter-type li.active {
+    border-bottom: solid 3px red;
+}
+.bible-type li {
+    background: #f2f2f2;
+}
+.bible-type li.active {
+    background: #fff;
+}
