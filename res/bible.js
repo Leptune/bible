@@ -26,7 +26,6 @@ $(document).ready(function() {
 	$('.bible-body-old li:first').addClass('active');
 
 	$("body").niceScroll();
-	$(".bible-body").niceScroll();
 	$(document).on('click', ".bible-header-juan-zhang li", function(event) {
 		$(".bible-header-juan-zhang li.active").removeClass('active');
 		$(this).addClass('active');
