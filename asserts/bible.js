@@ -108,7 +108,7 @@ $(document).ready(function() {
             mp3name = name+'第'+i+'章';
             obj.find('.amazingaudioplayer-audios').append('\
                 <li data-artist="" data-title="'+mp3name+'" data-album="" data-info="" data-image="" data-duration="0">\
-                    <div class="amazingaudioplayer-source" data-src="http://otw10z997.bkt.clouddn.com/'+mp3name+'.mp3" data-type="audio/mpeg" />\
+                    <div class="amazingaudioplayer-source" data-src="http://otzkd2ox3.bkt.clouddn.com/'+mp3name+'.mp3" data-type="audio/mpeg" />\
                 </li>\
             ');
         }
