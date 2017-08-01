@@ -11,7 +11,7 @@ $(document).ready(function() {
 		$('.bible-body-old').append('<li><h4>'+obj.abbr+'</h4><h5>'+name+'</h5></li>')
 	}
 	for (var i = 0; i < 4; i++) {
-		$('.bible-body-old').append('<li><h4>&nbsp;</h4><h5>&nbsp;</h5></li>')
+		$('.bible-body-old').append('<li class="no"><h4>&nbsp;</h4><h5>&nbsp;</h5></li>')
 	}
 	for (name in bible_data) {
 		var obj = bible_data[name];
@@ -25,7 +25,7 @@ $(document).ready(function() {
 		$('.bible-body-new').append('<li><h4>'+obj.abbr+'</h4><h5'+style+'>'+name+'</h5></li>')
 	}
 	for (var i = 0; i < 4; i++) {
-		$('.bible-body-new').append('<li><h4>&nbsp;</h4><h5>&nbsp;</h5></li>')
+		$('.bible-body-new').append('<li class="no"><h4>&nbsp;</h4><h5>&nbsp;</h5></li>')
 	}
 	$('.bible-body-old li:first').addClass('active');
 
@@ -59,6 +59,9 @@ $(document).ready(function() {
 		$($(this).data('class')).show();
 	});
 	$(document).on('click', ".bible-body-juan li", function(event) {
+		if ($(this).is('.no')) {
+			return false;
+		}
 		$(".bible-body-juan li.active").removeClass('active');
 		$(this).addClass('active');
 		$('.bible-header-zhang').click();
