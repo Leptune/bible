@@ -1,3 +1,6 @@
+
+var player = plyr.setup();
+
 $(document).ready(function() {
 	// 写入圣经章节
 	for (name in bible_data) {
@@ -29,13 +32,16 @@ $(document).ready(function() {
 			for (var i = 1; i <= bible_data[name].count; i++) {
 				$('.bible-body-zhang').append('<li><h5>'+i+'</h5></li>');
 			}
-			$('.bible-body-zhang li:first').addClass('active');
-			$('.bible-header-title h4').text(name);
-			$('.bible-foot').css('visibility', 'hidden');
-		} else {
-			$('.bible-header-title h4').text('圣经目录');
-			$('.bible-foot').css('visibility', 'visible');
+			var index = $('.bible-body-juan li.active').data('zhang');
+			if (index) {
+				$('.bible-body-zhang li:eq('+(+index-1)+')').addClass('active');
+				$('.bible-foot-tips').text('('+name+'第'+index+'章)');
+			} else {
+				$('.bible-foot-tips').text('('+name+')');
+			}
 		}
+		$('.bible-foot-type').toggle();
+		$('.bible-foot-tips').toggle();
 	});
 	$(document).on('click', ".bible-foot-type li", function(event) {
 		$(".bible-foot-type li.active").removeClass('active');
@@ -51,5 +57,14 @@ $(document).ready(function() {
 	$(document).on('click', ".bible-body-zhang li", function(event) {
 		$(".bible-body-zhang li.active").removeClass('active');
 		$(this).addClass('active');
+		var name = $('.bible-body-juan li.active h5').text();
+		var index = $(this).find('h5').text();
+		$('.bible-body-juan li.active').data('zhang', index);
+		$('.bible-foot-tips').text('('+name+'第'+index+'章)');
+	    player[0].source({
+		    type: 'audio',
+		    sources: 'http://otzkd2ox3.bkt.clouddn.com/'+name+'第'+index+'章.mp3'
+		});
+	    player[0].play();
 	});
 });

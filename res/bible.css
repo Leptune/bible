@@ -20,11 +20,6 @@ ul li {
 .bible-body {
     height: 75vh;
 }
-.bible-header-title {
-    position: relative;
-    top: 10px;
-    border-bottom: solid 1px #ccc;
-}
 .bible-header-juan-zhang {
     margin-top: 10px;
 }
@@ -60,8 +55,16 @@ li.active {
     border-bottom: solid 3px red;
 }
 .bible-foot-type li {
-    background: #f2f2f2;
+    background: #ddd;
 }
 .bible-foot-type li.active {
     background: #fff;
+}
+.bible-foot-tips {
+    position: relative;
+    top: -6px;
+}
+
+.plyr--audio .plyr__controls {
+    padding: 5px;
 }
