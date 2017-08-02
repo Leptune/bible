@@ -1,5 +1,5 @@
 body {
-    background: #fff;
+    background: #eee;
     text-align: center;
 }
 ul {
@@ -12,12 +12,16 @@ ul li {
     text-align: center;
 }
 
+.bible-top,.bible-body,.bible-header,.bible-foot {
+    background: #fff;
+}
 .bible-header {
 	position: fixed;
     width: 100%;
     background: #fff;
     z-index: 999;
 }
+
 .bible-body {
 	position: relative;
 	top: 85px;
@@ -28,7 +32,7 @@ ul li {
 	background: #fff;
 	z-index: 999;
 	bottom: 0px;
-    border-top: solid 1px #ccc;
+    border-top: solid 1px #ddd;
 }
 
 .bible-body-juan li {
@@ -44,11 +48,12 @@ ul li {
     cursor: pointer;
 }
 .bible-body-juan li, .bible-body-zhang li {
-    border-left: solid 0.1px #ccc;
-    border-bottom: solid 0.1px #ccc;
+    border-left: solid 0.1px #ddd;
+    border-bottom: solid 0.1px #ddd;
+    border-right: solid 0.1px #ddd;
 }
 .bible-body-juan li:last-child, .bible-body-zhang li:last-child {
-    border-right: solid 0.1px #ccc;
+    border-right: solid 0.1px #ddd;
 }
 .bible-body-old h4,.bible-body-new h4 {
     height: 19px;
@@ -62,7 +67,7 @@ li.active {
     color: red;
 }
 .bible-header-juan-zhang li {
-    border-bottom: solid 3px #ccc;
+    border-bottom: solid 3px #ddd;
 }
 .bible-header-juan-zhang li.active {
     border-bottom: solid 3px red;
@@ -75,4 +80,14 @@ li.active {
 }
 .plyr--audio .plyr__controls {
     padding: 5px;
+}
+.no {
+    cursor: auto !important;
+}
+
+@media (min-width: 768px) {
+    .bible-top,.bible-header,.bible-foot {
+        width: 40%;
+        margin: 0 auto;
+    }
 }
