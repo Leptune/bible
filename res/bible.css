@@ -34,6 +34,9 @@ ul li {
 	bottom: 0px;
     border-top: solid 1px #ddd;
 }
+.bible-foot-type h4,.bible-header-juan-zhang h4 {
+    font-weight: bold;
+}
 
 .bible-body-juan li {
     width: 25%;
@@ -64,19 +67,22 @@ ul li {
     line-height: 30px;
 }
 li.active {
-    color: red;
+    color: #e0115f;
 }
 .bible-header-juan-zhang li {
     border-bottom: solid 3px #ddd;
 }
 .bible-header-juan-zhang li.active {
-    border-bottom: solid 3px red;
+    border-bottom: solid 3px #e0115f;
 }
 .bible-foot-type li {
     background: #ddd;
 }
 .bible-foot-type li.active {
     background: #fff;
+}
+.bible-foot-tips {
+    color: #e0115f;
 }
 .plyr--audio .plyr__controls {
     padding: 5px;
