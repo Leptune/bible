@@ -1,6 +1,7 @@
 body {
-    background: #fff;
     text-align: center;
+    background: url(http://otzkd2ox3.bkt.clouddn.com/sky.jpg);
+    background-attachment: fixed;
 }
 ul {
     font-size: 0;
@@ -97,8 +98,6 @@ li.active {
         margin: 0 auto;
     }
     body {
-        background: url(http://otzkd2ox3.bkt.clouddn.com/sky.jpg);
-        background-attachment: fixed;
         opacity: 0.8;
     }
 }
