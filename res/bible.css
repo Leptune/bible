@@ -1,7 +1,8 @@
 body {
     text-align: center;
-    background: url(http://otzkd2ox3.bkt.clouddn.com/sky.jpg);
+    background: url(http://otzkd2ox3.bkt.clouddn.com/sky.jpg) no-repeat;
     background-attachment: fixed;
+    background-size: cover;
 }
 ul {
     font-size: 0;
