@@ -9,6 +9,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; 
+    opacity: 0.8;
 }
 ul {
     font-size: 0;
@@ -103,8 +104,5 @@ li.active {
     .bible-top,.bible-header,.bible-foot {
         width: 40%;
         margin: 0 auto;
-    }
-    body {
-        opacity: 0.8;
     }
 }
