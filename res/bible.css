@@ -1,8 +1,6 @@
 body {
-    background: url(http://otzkd2ox3.bkt.clouddn.com/sky.jpg);
-    background-attachment: fixed;
+    background: #fff;
     text-align: center;
-    opacity: 0.8;
 }
 ul {
     font-size: 0;
@@ -91,5 +89,10 @@ li.active {
     .bible-top,.bible-header,.bible-foot {
         width: 40%;
         margin: 0 auto;
+    }
+    body {
+        background: url(http://otzkd2ox3.bkt.clouddn.com/sky.jpg);
+        background-attachment: fixed;
+        opacity: 0.8;
     }
 }
