@@ -31,6 +31,9 @@ $(document).ready(function() {
 
 	$('body').niceScroll();
 	$(document).on('click', ".bible-header-juan-zhang li", function(event) {
+		if ($(this).is('.active')) {
+			return false;
+		}
 		$(".bible-header-juan-zhang li.active").removeClass('active');
 		$(this).addClass('active');
 		$('.bible-body-juan,.bible-body-zhang').hide();
